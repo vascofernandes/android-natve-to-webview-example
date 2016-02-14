@@ -1,0 +1,14 @@
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+<br>
+<br>
+<input type="button" value="Get My Deal" onClick="showMyDeal()" />
+<div id="my-deal"></div>
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        window.Android.showToast(toast);
+    }
+
+    function showMyDeal(toast) {
+        document.getElementById("my-deal").innerHTML = window.Android.myDeal();
+    }
+</script>
